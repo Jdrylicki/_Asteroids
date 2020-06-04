@@ -15,6 +15,7 @@ public class AsteroidCollider : MonoBehaviour
         if (collision.collider.tag.Equals("Laser"))
         {
             Destroy();
+            Destroy(collision.gameObject);
         }
         
         /* I need to figure out a way to make this not crash unity lmao
